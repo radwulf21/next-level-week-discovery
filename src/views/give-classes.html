@@ -33,7 +33,7 @@
         </header>
 
         <main>
-            <form id="create-class" action="">
+            <form id="create-class" action="/save-classes" method="POST">
                 
                 <fieldset>
                     <legend>Seus dados</legend>
@@ -96,7 +96,7 @@
                                 <option value="" hidden>Selecione o dia</option>
                                 {% for weekday in weekdays %}
 
-                                    <option value="{{ loop.index }}">
+                                    <option value="{{ loop.index0 }}">
                                         {{ weekday }}
                                     </option>
 
